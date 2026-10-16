@@ -1,4 +1,4 @@
-# TP1 — Les sockets TCP en Java
+# TP1 — Les sockets TCgit P en Java
 
 **Matière :** Développement d'applications réparties  
 **Classe :** LSI 3  
@@ -32,3 +32,30 @@ Nous avons remplacé `localhost` par l'adresse IPv4 de l'ordinateur pour tester 
 
 ## Conclusion
 Ce TP nous a permis de comprendre le fonctionnement de base de la communication Client/Serveur avec les sockets TCP en Java.
+
+# TP1 — Activité 1-2 : Service de calculatrice
+
+**Matière :** Développement d'applications réparties  
+**Classe :** LSI 3  
+**Projet :** TP1-DAR2026
+
+## 1. Objectif
+
+L'objectif de cette activité est de développer un service de calculatrice utilisant une communication Client/Serveur avec les sockets TCP en Java.
+
+Le client envoie un entier au serveur, qui effectue une multiplication par 5 et renvoie le résultat.
+
+## 2. Création du serveur
+
+Nous avons modifié la classe `Server` pour recevoir un entier à l'aide de `DataInputStream`, effectuer le calcul et envoyer le résultat avec `DataOutputStream`.
+
+![ser.jpg](../cap/ser.jpg)
+
+## 3. Création du client
+
+Nous avons modifié la classe `Client` pour permettre la saisie d'un entier au clavier, son envoi au serveur et l'affichage du résultat reçu.
+
+
+![c.jpg](../cap/c.jpg)
+
+
