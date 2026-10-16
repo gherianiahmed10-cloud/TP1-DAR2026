@@ -59,3 +59,34 @@ Nous avons modifié la classe `Client` pour permettre la saisie d'un entier au c
 ![c.jpg](../cap/c.jpg)
 
 
+# TP1 — Activité 1-3 : Amélioration du service de calculatrice
+
+**Matière :** Développement d'applications réparties  
+**Classe :** LSI 3  
+**Projet :** TP1-DAR2026
+
+## 1. Objectif
+
+L'objectif de cette activité est d'améliorer l'application Client/Serveur TCP développée précédemment afin de permettre la communication entre deux machines distinctes et de proposer quatre opérations de calcul.
+
+## 2. Connexion entre deux machines
+
+Nous avons utilisé les classes `InetAddress` et `InetSocketAddress` pour gérer l'adresse IP et le port de communication.
+
+Le serveur écoute sur son adresse IP locale et le client utilise cette adresse pour établir une connexion TCP.
+
+
+## 3. Amélioration de la calculatrice
+
+Nous avons ajouté un menu contenant quatre opérations :
+
+- Addition
+- Soustraction
+- Multiplication
+- Division
+
+Le client transmet le choix de l'opération ainsi qu'un entier au serveur. Le serveur effectue le calcul en utilisant une instruction `switch` puis renvoie le résultat.
+
+Dans notre implémentation, le deuxième opérande est fixé à 5.
+
+
